@@ -24,20 +24,27 @@ int main()
     printf("\nTASK-110\n");
 
     // Integer
-    int count = 0;
+    int count = 10;
     printf("count = %d\n", count);
 
     // Add one to count
-    count = count + 1;
+    count = count + 2;
     printf("New value of count = %d\n", count);
 
-    // Char
+    // Char (No change expected due to A already having a variable of 65)
     char character;
     character = 'A';
     printf("The character %c has the ASCII code %d\n", character, character);
 
-    // Short
-    short shortCount = 32766;
+// A has a ASCII of 65
+// Z has a ASCII of 90
+// a has a ASCII of 97
+// z has a ASCII of 122
+// 0 has a ASCII of 48
+// 9 has a ASCII of 57
+
+    // Short After rerun the shortCount now has a value of 2 after making change 
+    unsigned short shortCount = shortCount + 2;
     printf("The value of shortCount is %hd\n", shortCount);
     shortCount = shortCount + 1;
     printf("add 1 and shortCount is %hd\n", shortCount);
@@ -69,6 +76,10 @@ int main()
     printf("Size of a long long is %d bytes\n", sizeof(long long));
     printf("Size of a float is %d bytes\n", sizeof(float));
     printf("Size of a double is %d bytes\n", sizeof(double));
+
+// Added line below, it changed to how I expected it. Task 1
+
+    printf("Size of a long long is %d bytes\n", sizeof(long long));
 
     // Stop
     while (true);   
