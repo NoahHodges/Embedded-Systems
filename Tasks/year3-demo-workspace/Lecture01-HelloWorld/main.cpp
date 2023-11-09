@@ -10,4 +10,3 @@ int main()
     display.printf("Hello LCD");
     while (true);
 }
-
